@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+
+
+using namespace std;
+
+
+int main()
+{
+	double mas[1000]; //масив для збереження даних
+	string s; //строка шляху до фалу
+	ifstream f; //файл, з якого будемо отримувати дані
+	ofstream r("Result.txt"); //файл, в який будемо записувати результат
+
+q:
+	cout << "Enter the path to the file containing the data (numbers) to calculate the arithmetic mean" << endl;
+	getline(cin, s); //отримуємо адрес до файлу
+
+
+	f.open(s); //відкриваємо файл
