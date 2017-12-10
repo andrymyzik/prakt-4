@@ -20,3 +20,14 @@ q:
 
 
 	f.open(s); //відкриваємо файл
+
+	if (!f.is_open()) { //перевіряємо чи існує файл за такою адресою
+		cout << "This file does not exist" << endl << endl << endl;// якщо не існує, то виводимо
+		goto q;//та повертаємося на початок
+	}
+	else { //якщо існує
+		double ser;
+		double sum;
+		int n;
+		n = 0;
+		sum = 0; //задаємо змінні
